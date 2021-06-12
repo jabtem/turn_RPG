@@ -16,15 +16,15 @@ MonoBehaviour:
     xzUnitSize: 2
     yUnitSize: 1
     cellCount: 50
-    gridHeight: 4
-    tintColor: {r: 0.23834105, g: 0.389676, b: 0.49056602, a: 0.15686275}
+    gridHeight: 1
+    tintColor: {r: 0.28159487, g: 0.42807716, b: 0.5283019, a: 0.15686275}
   palette:
     bgColor: 0
     snapshotCameraPitch: 225
     snapshotCameraYaw: 30
     overwriteThumbnails: 0
   toolbar:
-    selectedDrawToolIndex: 0
+    selectedDrawToolIndex: 4
     selectedPaintToolIndex: 0
     position: 0
     scale: 1

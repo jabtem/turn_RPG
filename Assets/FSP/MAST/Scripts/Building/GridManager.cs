@@ -164,7 +164,8 @@ namespace MAST
                 MoveGridToNewHeight();
                 
                 // Hide the grid in the hierarchy
-                gridGameObject.hideFlags = HideFlags.HideInHierarchy;
+                //하이어라키에서 오브젝트를 안보이게 숨김
+                //gridGameObject.hideFlags = HideFlags.HideInHierarchy;
             }
             #endregion
             // ---------------------------------------------------------------------------
