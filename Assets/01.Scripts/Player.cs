@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RPGInterface;
 
-public class Player : MonoBehaviour
+public class Player : Stat
 {
-    // Start is called before the first frame update
+    Item equipment;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         

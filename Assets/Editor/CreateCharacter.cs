@@ -33,7 +33,7 @@ public class CreateCharacter : ScriptableWizard
         GUILayout.Label("캐릭터 이름");
         str = EditorGUILayout.TextField(str);
 
-        
+        GUILayout.Label("캐릭터 모델");
         characterModel = (GameObject)EditorGUILayout.ObjectField(characterModel, typeof(GameObject), false);
         if(characterModel != null && canCreate)
         {
@@ -86,7 +86,7 @@ public class CreateCharacter : ScriptableWizard
     {
         str = null;
         characterModel = null;
-        GameObject.DestroyImmediate(go);
+        GameObject.DestroyImmediate(preModel);
         GUI.FocusControl("리셋");
     }
 
