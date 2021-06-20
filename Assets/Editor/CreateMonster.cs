@@ -6,13 +6,11 @@ using UnityEditor;
 
 public class CreateMonster : ScriptableWizard
 {
-    string str = null;
+    string str = "";
     int HP, MP, STR, AGI, DEX, INT, SPI, ATK, MTK, DEF, RES;
     bool physicalImmune, magicImmune;
     static GameObject go;
 
-    //게임오브젝트 생성허용 여부
-    bool canCreate = true;
     static GameObject monsterModel = null;
     static CreateMonster window;
     //이전 캐릭터 모델
@@ -94,7 +92,7 @@ public class CreateMonster : ScriptableWizard
         GUILayout.EndHorizontal();
 
 
-        if (monsterModel != null && canCreate)
+        if (monsterModel != null && preModel ==null)
         {
 
             monsterModel = Instantiate(monsterModel);
@@ -102,15 +100,13 @@ public class CreateMonster : ScriptableWizard
             //이전 캐릭터모델 저장, 에디터 조작하면서 모델을 변경해도 지장이없도록하기위함
             preModel = monsterModel;
             //지정한 모델을 딱한번만 생성시키기 위함 
-            canCreate = false;
             monsterModel.transform.parent = go.transform;
         }
 
-        //캐릭터 모델을 바꿔넣었을경우
-        if (monsterModel != null && preModel != monsterModel)
+        //몬스터 모델을 바꿔넣었을경우
+        else if (monsterModel != null && preModel != monsterModel)
         {
             GameObject.DestroyImmediate(preModel);
-            canCreate = true;
         }
 
 
@@ -148,7 +144,7 @@ public class CreateMonster : ScriptableWizard
 
     private void OnWizardUpdate()
     {
-        if (str != null)
+        if (str != "")
         {
             isValid = true;
             errorString = "";
@@ -162,7 +158,7 @@ public class CreateMonster : ScriptableWizard
     //리셋 버튼, ResetButton
     private void OnWizardOtherButton()
     {
-        str = null;
+        str = "";
         monsterModel = null;
         HP = MP = STR = AGI = DEX = INT = SPI = ATK = MTK = DEF = RES = 0;
         GameObject.DestroyImmediate(preModel);

@@ -38,21 +38,20 @@ public class CreateTile : EditorWindow
         {
             GameObject.DestroyImmediate(preModel);
         }
-
-        //이름, 모델 둘중하나만 비어있어도 생성 비활성
-        if (str != null &&  go != null)
+        GUILayout.BeginHorizontal();
+        if (GUILayout.Button("Reset"))
         {
-            GUI.enabled = true;
-        }
-        else
-        {
-            EditorGUILayout.HelpBox("타일 이름이 없거나 모델이 등록되지 않았습니다.", MessageType.Error);
-            GUI.enabled = false;
+            str = "";
+            go = null;
+            if(preModel !=null)
+                GameObject.DestroyImmediate(preModel);
+            GUI.FocusControl("리셋");
         }
 
+
+        EditorGUI.BeginDisabledGroup((str == "" || go == null));
         if (GUILayout.Button("Create"))
         {
-            GUI.enabled = true;
             go.AddComponent<MASTPrefabSettings>();
             go.AddComponent<MeshCollider>();
             string prefabPath = "Assets/04.Prefabs/Tile/" + str + ".prefab";
@@ -60,6 +59,14 @@ public class CreateTile : EditorWindow
             //생성후 에디터창 종료
             window.Close();
         }
+        EditorGUI.EndDisabledGroup();
+        GUILayout.EndHorizontal();
+
+        if (str == "" || go == null)
+        {
+            EditorGUILayout.HelpBox("타일 이름이 없거나 모델이 등록되지 않았습니다.", MessageType.Error);
+        }
+
     }
     private void OnDestroy()
     {

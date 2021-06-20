@@ -7,11 +7,9 @@ using UnityEditor;
 public class CreateCharacter : ScriptableWizard
 {
     // static 선언 안하면 에러
-    private string str;
+    private string str = "";
     static GameObject go;
 
-    //게임오브젝트 생성허용 여부
-    bool canCreate = true;
     GameObject characterModel = null;
     static CreateCharacter window;
     //이전 캐릭터 모델
@@ -70,7 +68,7 @@ public class CreateCharacter : ScriptableWizard
     }
     private void OnWizardUpdate()
     {
-        if (str != null)
+        if (str != "")
         {
             isValid = true;
             errorString = "";
@@ -85,7 +83,7 @@ public class CreateCharacter : ScriptableWizard
     //리셋 버튼, ResetButton
     private void OnWizardOtherButton()
     {
-        str = null;
+        str = "";
         characterModel = null;
         GameObject.DestroyImmediate(preModel);
         GUI.FocusControl("리셋");
