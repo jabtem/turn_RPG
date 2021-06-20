@@ -6,9 +6,9 @@ using UnityEditor;
 
 public class CreateMonster : ScriptableWizard
 {
-    // static 선언 안하면 에러
-    string str;
+    string str = null;
     int HP, MP, STR, AGI, DEX, INT, SPI, ATK, MTK, DEF, RES;
+    bool physicalImmune, magicImmune;
     static GameObject go;
 
     //게임오브젝트 생성허용 여부
@@ -80,6 +80,18 @@ public class CreateMonster : ScriptableWizard
         GUILayout.Label("마법 저항력");
         RES = EditorGUILayout.IntField(RES);
         GUILayout.EndHorizontal();
+        GUILayout.Space(20);
+
+
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("물리 면역");
+        physicalImmune = EditorGUILayout.Toggle(physicalImmune);
+        GUILayout.EndHorizontal();
+
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("마법 면역");
+        magicImmune = EditorGUILayout.Toggle(magicImmune);
+        GUILayout.EndHorizontal();
 
 
         if (monsterModel != null && canCreate)
@@ -111,36 +123,42 @@ public class CreateMonster : ScriptableWizard
     private void OnWizardCreate()
     {
 
-        if (str != null)
-        {
-            go.AddComponent<Monster>();
-            Monster m = go.GetComponent<Monster>();
-            m.HP = HP;
-            m.MP = MP;
-            m.STR = STR;
-            m.AGI = AGI;
-            m.DEX = DEX;
-            m.INT = INT;
-            m.SPI = SPI;
-            m.ATK = ATK;
-            m.MTK = MTK;
-            m.DEF = DEF;
-            m.RES = RES;
+        go.AddComponent<Monster>();
+        Monster m = go.GetComponent<Monster>();
+        m.HP = HP;
+        m.MP = MP;
+        m.STR = STR;
+        m.AGI = AGI;
+        m.DEX = DEX;
+        m.INT = INT;
+        m.SPI = SPI;
+        m.ATK = ATK;
+        m.MTK = MTK;
+        m.DEF = DEF;
+        m.RES = RES;
+        m.physicalImmune = physicalImmune;
+        m.magicImmune = magicImmune;
 
-            string prefabPath = "Assets/04.Prefabs/Monster/" + str + ".prefab";
-            PrefabUtility.SaveAsPrefabAsset(go, prefabPath);
-
-        }
-        else
-        {
-            Debug.Log("프리펩 이름을 입력하세요");
-        }
+        string prefabPath = "Assets/04.Prefabs/Monster/" + str + ".prefab";
+        PrefabUtility.SaveAsPrefabAsset(go, prefabPath);
 
 
         GameObject.DestroyImmediate(go);
     }
 
-
+    private void OnWizardUpdate()
+    {
+        if (str != null)
+        {
+            isValid = true;
+            errorString = "";
+        }
+        else
+        {
+            isValid = false;
+            errorString = "몬스터 이름을 입력해주세요";
+        }
+    }
     //리셋 버튼, ResetButton
     private void OnWizardOtherButton()
     {
@@ -157,15 +175,5 @@ public class CreateMonster : ScriptableWizard
         GameObject.DestroyImmediate(go);
     }
 
-    //void OnGUI()
-    //{
-    //    GUILayout.Label("프리펩 이름");
-    //    str = EditorGUILayout.TextField(str);
 
-    //    string prefabPath = "Assets/Prefabs/MyPrefabs/"+str+".prefab";
-    //    if (GUILayout.Button("Create"))
-    //    {
-    //        PrefabUtility.SaveAsPrefabAsset(test, prefabPath);
-    //    }
-    //}
 }

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: InterfaceState
   m_EditorClassIdentifier: 
   selectedInterfaceTab: 0
-  gridExists: 1
+  gridExists: 0
   previousBuildToolIndex: -1
-  selectedBuildToolIndex: 4
+  selectedBuildToolIndex: -1
   selectedPrefabIndex: -1
   prefabPath: Assets/04.Prefabs/Tile
   selectedPrefabPaletteFolderIndex: 0

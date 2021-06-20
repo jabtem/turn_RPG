@@ -59,6 +59,17 @@ namespace RPGInterface
         string itemId { get; set; }
     }
 
+    //면역속성
+    public interface IImune
+    {
+
+        //물리면역
+        bool physicalImmune { get; set; }
+
+        //마법면역
+        bool magicImmune { get; set; }
+    }
+
     //아이템클래스 아이템데이터를위한클래스
     public class Item :IItem
     {
@@ -69,7 +80,7 @@ namespace RPGInterface
         int _HP,_MP,_STR,_AGI,_DEX,_INT,_SPI,_ATK,_MTK,_DEF,_RES;
 
 
-        #region 아이템 인터페이스
+        #region 아이템 속성
         public string itemType
         {
             get
@@ -252,7 +263,7 @@ namespace RPGInterface
         [SerializeField]
         int _HP, _MP, _STR, _AGI, _DEX, _INT, _SPI, _ATK, _MTK, _DEF, _RES;
 
-        #region 스탯 인터페이스
+        #region 스테이터스
         public int HP
         {
             get
@@ -388,6 +399,8 @@ namespace RPGInterface
             }
         }
         #endregion
+
+
     }
 
 }
