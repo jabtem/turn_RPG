@@ -10,6 +10,7 @@ public class CreateTile : EditorWindow
     private string str;
     static GameObject go = null;
     static EditorWindow window;
+    private bool FIRE, WATER, EARTH, LIGHT, DARKNESS; //화 수 지 명 암 속성
 
     //이전 타일 모델
     GameObject preModel = null;
@@ -28,7 +29,20 @@ public class CreateTile : EditorWindow
         GUILayout.Label("타일 모델");
         go = (GameObject)EditorGUILayout.ObjectField(go, typeof(GameObject), false);
 
-        if(go !=null && preModel == null)
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("화");
+        FIRE = EditorGUILayout.Toggle(FIRE);
+        GUILayout.Label("수");
+        WATER = EditorGUILayout.Toggle(WATER);
+        GUILayout.Label("지");
+        EARTH = EditorGUILayout.Toggle(EARTH);
+        GUILayout.Label("명");
+        LIGHT = EditorGUILayout.Toggle(LIGHT);
+        GUILayout.Label("암");
+        DARKNESS = EditorGUILayout.Toggle(DARKNESS);
+        GUILayout.EndHorizontal();
+
+        if (go !=null && preModel == null)
         {
             go = Instantiate(go);
             preModel = go;
@@ -43,6 +57,8 @@ public class CreateTile : EditorWindow
         {
             str = "";
             go = null;
+            FIRE = WATER = EARTH = LIGHT = DARKNESS = false;
+
             if(preModel !=null)
                 GameObject.DestroyImmediate(preModel);
             GUI.FocusControl("리셋");
@@ -54,6 +70,13 @@ public class CreateTile : EditorWindow
         {
             go.AddComponent<MASTPrefabSettings>();
             go.AddComponent<MeshCollider>();
+            MapTile tile =  go.AddComponent<MapTile>();
+            tile.FIRE = FIRE;
+            tile.WATER = WATER;
+            tile.EARTH = EARTH;
+            tile.LIGHT = LIGHT; 
+            tile.DARKNESS = DARKNESS;
+            
             string prefabPath = "Assets/04.Prefabs/Tile/" + str + ".prefab";
             PrefabUtility.SaveAsPrefabAsset(go, prefabPath);
             //생성후 에디터창 종료
