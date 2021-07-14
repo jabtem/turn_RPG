@@ -71,12 +71,13 @@ namespace RPGInterface
     }
 
     //아이템클래스 아이템데이터를위한클래스
+    [System.Serializable]
     public class Item :IItem
     {
 
-
+        [SerializeField]
         string _itemType, _itemName, _itemId;
-
+        [SerializeField]
         int _HP,_MP,_STR,_AGI,_DEX,_INT,_SPI,_ATK,_MTK,_DEF,_RES;
 
 
