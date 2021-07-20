@@ -42,6 +42,8 @@ namespace RPGInterface
         //마법저항력
         int RES { get; set; }
 
+        int CRI { get; set; }
+
     }
 
 
@@ -57,6 +59,28 @@ namespace RPGInterface
 
         //아이템 고유ID
         string itemId { get; set; }
+
+        //장비 공격딜레이
+        int DELAY { get; set; }
+
+        //아이템 세부분류
+        string TYPE { get; set; }
+
+
+        //속성강화
+        int FireEn { get; set; }
+        int WaterEn { get; set; }
+        int EarthEn { get; set; }
+        int LightEn { get; set; }
+        int DarkEn { get; set; }
+
+        //속성저항
+        int FireRES { get; set; }
+        int WaterRES { get; set; }
+        int EarthRES { get; set; }
+        int LightRES { get; set; }
+        int DarkRES { get; set; }
+
     }
 
     //면역속성
@@ -76,24 +100,29 @@ namespace RPGInterface
     {
 
         [SerializeField]
-        string _itemType, _itemName, _itemId;
+        //아이템분류
+        string _itemName, _itemId, _itemType;
         [SerializeField]
         int _HP,_MP,_STR,_AGI,_DEX,_INT,_SPI,_ATK,_MTK,_DEF,_RES;
 
+        //치명타율 ,공격딜레이, 장비분류
+        [SerializeField]
+        int _CRI, _DELAY;
+
+        [SerializeField]
+        //장비 세부분류
+        string _TYPE;
+
+
+        [SerializeField]
+        //속성강화수치
+        int _FireEn, _WaterEn, _EarthEn, _LightEn, _DarkEn;
+
+        [SerializeField]
+        //속성저항수치
+        int _FireRES, _WaterRES, _EarthRES, _LightRES, _DarkRES;
 
         #region 아이템 속성
-        public string itemType
-        {
-            get
-            {
-                return _itemType;
-            }
-
-            set
-            {
-                _itemType = value;
-            }
-        }
         public string itemName
         {
             get
@@ -106,6 +135,20 @@ namespace RPGInterface
                 _itemName = value;
             }
         }
+
+        public string itemType
+        {
+            get
+            {
+                return _itemType;
+            }
+
+            set
+            {
+                _itemType = value;
+            }
+        }
+
         public string itemId
         {
             get
@@ -253,6 +296,166 @@ namespace RPGInterface
                 _RES = value;
             }
         }
+
+        public int CRI
+        {
+            get
+            {
+                return _CRI;
+            }
+
+            set
+            {
+                _CRI = value;
+            }
+        }
+        public int DELAY
+        {
+            get
+            {
+                return _DELAY;
+            }
+
+            set
+            {
+                _DELAY = value;
+            }
+        }
+
+        public string TYPE
+        {
+            get
+            {
+                return _TYPE;
+            }
+
+            set
+            {
+                _TYPE = value;
+            }
+        }
+        public int FireEn
+        {
+            get
+            {
+                return _FireEn;
+            }
+
+            set
+            {
+                _FireEn = value;
+            }
+        }
+        public int WaterEn
+        {
+            get
+            {
+                return _WaterEn;
+            }
+
+            set
+            {
+                _WaterEn = value;
+            }
+        }
+        public int EarthEn
+        {
+            get
+            {
+                return _EarthEn;
+            }
+
+            set
+            {
+                _EarthEn = value;
+            }
+        }
+        public int LightEn
+        {
+            get
+            {
+                return _LightEn;
+            }
+
+            set
+            {
+                _LightEn = value;
+            }
+        }
+        public int DarkEn
+        {
+            get
+            {
+                return _DarkEn;
+            }
+
+            set
+            {
+                _DarkEn = value;
+            }
+        }
+
+        public int FireRES
+        {
+            get
+            {
+                return _FireRES;
+            }
+
+            set
+            {
+                _FireRES = value;
+            }
+        }
+        public int WaterRES
+        {
+            get
+            {
+                return _WaterRES;
+            }
+
+            set
+            {
+                _WaterRES = value;
+            }
+        }
+        public int EarthRES
+        {
+            get
+            {
+                return _EarthRES;
+            }
+
+            set
+            {
+                _EarthRES = value;
+            }
+        }
+        public int LightRES
+        {
+            get
+            {
+                return _LightRES;
+            }
+
+            set
+            {
+                _LightRES = value;
+            }
+        }
+        public int DarkRES
+        {
+            get
+            {
+                return _DarkRES;
+            }
+
+            set
+            {
+                _DarkRES = value;
+            }
+        }
+
         #endregion
 
     }
@@ -262,7 +465,7 @@ namespace RPGInterface
     {
         //인스펙터 표시
         [SerializeField]
-        int _HP, _MP, _STR, _AGI, _DEX, _INT, _SPI, _ATK, _MTK, _DEF, _RES;
+        int _HP, _MP, _STR, _AGI, _DEX, _INT, _SPI, _ATK, _MTK, _DEF, _RES, _CRI;
 
         #region 스테이터스
         public int HP
@@ -397,6 +600,19 @@ namespace RPGInterface
             set
             {
                 _RES = value;
+            }
+        }
+
+        public int CRI
+        {
+            get
+            {
+                return _CRI;
+            }
+
+            set
+            {
+                _CRI = value;
             }
         }
         #endregion

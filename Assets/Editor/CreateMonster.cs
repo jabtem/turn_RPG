@@ -7,7 +7,7 @@ using UnityEditor;
 public class CreateMonster : ScriptableWizard
 {
     string str = "";
-    int HP, MP, STR, AGI, DEX, INT, SPI, ATK, MTK, DEF, RES;
+    int HP, MP, STR, AGI, DEX, INT, SPI, ATK, MTK, DEF, RES ,CRI;
     bool physicalImmune, magicImmune;
     static GameObject go;
 
@@ -78,6 +78,12 @@ public class CreateMonster : ScriptableWizard
         GUILayout.Label("마법 저항력");
         RES = EditorGUILayout.IntField(RES);
         GUILayout.EndHorizontal();
+
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("치명타율");
+        CRI = EditorGUILayout.IntField(CRI);
+        GUILayout.EndHorizontal();
+
         GUILayout.Space(20);
 
 
@@ -132,6 +138,7 @@ public class CreateMonster : ScriptableWizard
         m.MTK = MTK;
         m.DEF = DEF;
         m.RES = RES;
+        m.CRI = CRI;
         m.physicalImmune = physicalImmune;
         m.magicImmune = magicImmune;
 
