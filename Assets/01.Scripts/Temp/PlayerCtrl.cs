@@ -17,6 +17,9 @@ public class PlayerCtrl : MonoBehaviour {
     //NavMeshAgent 컴포넌트 할당 레퍼런스 
     private NavMeshAgent myTraceAgent;
 
+    //이동가능여부
+    public bool canMove = false;
+
     //케릭이 이동할 목적지 좌표
     Vector3 movePoint = Vector3.zero;
 
@@ -54,7 +57,6 @@ public class PlayerCtrl : MonoBehaviour {
 
         //NavMeshAgent 컴포넌트를 해당 레퍼런스에 연결
         myTraceAgent = GetComponent<NavMeshAgent>();
-        //nvAgent.isStopped = true; //네비게이션 멈춤 
         //nvAgent.velocity = Vector3.zero; //네비게이션 멈춤    
     }
 
@@ -67,12 +69,18 @@ public class PlayerCtrl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Debug.Log(myTraceAgent.velocity.z);
-        Debug.Log(GetComponent<Rigidbody>().velocity.z);
-
-
-
         ////////////////////////////////////////////
+
+        if (canMove)
+            myTraceAgent.isStopped = false;
+        else if (!canMove)
+        {
+            myTraceAgent.isStopped = true;
+            myTraceAgent.velocity = Vector3.zero;
+            myTraceAgent.destination = myTr.position;
+        }
+
+
 
         //Main Camera 에서 마우스 커서(Vector3 타입이지만 Z값 무시한 값 (0~1280,0~800,0) )의 위치로 캐스팅되는 Ray를 생성함
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -86,7 +94,7 @@ public class PlayerCtrl : MonoBehaviour {
         {
             //위에서 미리 생성한 ray를 인자로 전달, out(메서드 안에서 메서드 밖으로 데이타를 전달 할때 사용)hit, ray 거리, 레이어 마스크 값(레이어가 Ground 일때만 충돌)
             // Mathf.Infinity 이 값은 무한한 값이라고 생각하면 된다. 따라서 거리가 무한~~~
-            if (Physics.Raycast(ray, out hitInfo1, Mathf.Infinity, 1 << LayerMask.NameToLayer("Ground")))
+            if (Physics.Raycast(ray, out hitInfo1, Mathf.Infinity, 1 << LayerMask.NameToLayer("Ground") )&& canMove)
             {
                 //ray에 맞은 위치를 이동할 목표지점으로 설정
                 movePoint = hitInfo1.point;
