@@ -81,6 +81,9 @@ namespace RPGInterface
         int LightRES { get; set; }
         int DarkRES { get; set; }
 
+        //부가효과
+        string SideEffect { get; set; }
+
     }
 
     //면역속성
@@ -121,6 +124,9 @@ namespace RPGInterface
         [SerializeField]
         //속성저항수치
         int _FireRES, _WaterRES, _EarthRES, _LightRES, _DarkRES;
+
+        [SerializeField]
+        string _SideEffect;
 
         #region 아이템 속성
         public string itemName
@@ -454,6 +460,19 @@ namespace RPGInterface
             {
                 _DarkRES = value;
             }
+        }
+
+        public string SideEffect 
+        { 
+            get
+            {
+                return _SideEffect;
+            }
+            set
+            {
+                _SideEffect = value;
+            }
+        
         }
 
         #endregion

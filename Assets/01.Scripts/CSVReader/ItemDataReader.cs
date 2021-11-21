@@ -24,13 +24,13 @@ public class ItemDataReader : MonoBehaviour
         //CSV데이터는 항상 값이 비어있는 라인이 하나 추가되어있음
         int line = itemData.text.Split('\n').Length - 1;
 
-        // (전체 문자열수 / 행 개수) = 열 개수
+        //열 개수 = (전체 문자열수 / 행 개수)
         //아이템데이터의 마지막열은 아이템 부과효과 설명이므로 따로 데이터로 넣진않는다
-        int tableSize =(data.Length - 1) / line;
+        int tableSize =data.Length  / line;
 
-        items = new Item[tableSize];
+        items = new Item[line-1];
 
-        for(int i=0; i<tableSize; i++)
+        for(int i=0; i< line-1 ; i++)
         {
             //첫행은 실제 데이터값이아닌 필드명칭이므로 제외하여 계산
             items[i] = new Item();
@@ -52,7 +52,7 @@ public class ItemDataReader : MonoBehaviour
             items[i].RES = int.Parse(data[tableSize * (i + 1) + 13]);
             items[i].CRI = int.Parse(data[tableSize * (i + 1) + 14]);
             items[i].DELAY = int.Parse(data[tableSize * (i + 1) + 15]);
-            items[i].TYPE = data[tableSize * (i + 1)+16];
+            items[i].TYPE = data[tableSize * (i + 1) + 16];
             items[i].FireEn = int.Parse(data[tableSize * (i + 1) + 17]);
             items[i].WaterEn = int.Parse(data[tableSize * (i + 1) + 18]);
             items[i].EarthEn = int.Parse(data[tableSize * (i + 1) + 19]);
@@ -64,6 +64,7 @@ public class ItemDataReader : MonoBehaviour
             items[i].EarthRES = int.Parse(data[tableSize * (i + 1) + 24]);
             items[i].LightRES = int.Parse(data[tableSize * (i + 1) + 25]);
             items[i].DarkRES = int.Parse(data[tableSize * (i + 1) + 26]);
+            items[i].SideEffect = data[tableSize * (i + 1) + 27];
         }
     }
 

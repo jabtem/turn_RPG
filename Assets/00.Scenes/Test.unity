@@ -547,9 +547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 4900000, guid: d1e11612bb330fc489d0d1dbd7281543, type: 3}
   items:
-  - _itemName: WEAPON
+  - _itemName: "\uBAA9\uAC80"
     _itemId: 0001w
-    _itemType: "\uBAA9\uAC80"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 1
@@ -562,21 +562,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 5
+    _TYPE: "\uD55C\uC190"
+    _FireEn: 1
+    _WaterEn: 1
+    _EarthEn: 1
+    _LightEn: 1
+    _DarkEn: 1
+    _FireRES: 1
+    _WaterRES: 1
+    _EarthRES: 1
+    _LightRES: 1
+    _DarkRES: 1
+    _SideEffect: 
+  - _itemName: "\uC0AC\uB0E5\uC6A9 \uD65C"
     _itemId: 0002w
-    _itemType: "\uC0AC\uB0E5\uC6A9 \uD65C"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 0
@@ -589,21 +590,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 8
+    _TYPE: "\uC6D0\uAC70\uB9AC"
+    _FireEn: 2
+    _WaterEn: 2
+    _EarthEn: 2
+    _LightEn: 2
+    _DarkEn: 2
+    _FireRES: 2
+    _WaterRES: 2
+    _EarthRES: 2
+    _LightRES: 2
+    _DarkRES: 2
+    _SideEffect: 
+  - _itemName: "\uC0AC\uB0E5\uC6A9 \uB2E8\uAC80"
     _itemId: 0003w
-    _itemType: "\uC0AC\uB0E5\uC6A9 \uB2E8\uAC80"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 0
@@ -615,22 +617,23 @@ MonoBehaviour:
     _MTK: 0
     _DEF: 0
     _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _CRI: 2
+    _DELAY: 4
+    _TYPE: "\uD55C\uC190"
+    _FireEn: 3
+    _WaterEn: 3
+    _EarthEn: 3
+    _LightEn: 3
+    _DarkEn: 3
+    _FireRES: 3
+    _WaterRES: 3
+    _EarthRES: 3
+    _LightRES: 3
+    _DarkRES: 3
+    _SideEffect: 
+  - _itemName: "\uCD0C\uC7A5\uC758 \uB0A1\uC740 \uC9C0\uD321\uC774"
     _itemId: 0004w
-    _itemType: "\uCD0C\uC7A5\uC758 \uB0A1\uC740 \uC9C0\uD321\uC774"
+    _itemType: WEAPON
     _HP: 0
     _MP: 20
     _STR: 0
@@ -643,21 +646,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 5
+    _TYPE: "\uC591\uC190"
+    _FireEn: 4
+    _WaterEn: 4
+    _EarthEn: 4
+    _LightEn: 4
+    _DarkEn: 4
+    _FireRES: 4
+    _WaterRES: 4
+    _EarthRES: 4
+    _LightRES: 4
+    _DarkRES: 4
+    _SideEffect: 
+  - _itemName: "\uB098\uBB34 \uBA54\uC774\uC2A4"
     _itemId: 0005w
-    _itemType: "\uB098\uBB34 \uBA54\uC774\uC2A4"
+    _itemType: WEAPON
     _HP: 10
     _MP: 0
     _STR: 1
@@ -670,21 +674,22 @@ MonoBehaviour:
     _DEF: 5
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 6
+    _TYPE: "\uC591\uC190"
+    _FireEn: 5
+    _WaterEn: 5
+    _EarthEn: 5
+    _LightEn: 5
+    _DarkEn: 5
+    _FireRES: 5
+    _WaterRES: 5
+    _EarthRES: 5
+    _LightRES: 5
+    _DarkRES: 5
+    _SideEffect: 
+  - _itemName: "\uB098\uBB34 \uBC29\uD328"
     _itemId: 0006w
-    _itemType: "\uB098\uBB34 \uBC29\uD328"
+    _itemType: WEAPON
     _HP: 20
     _MP: 0
     _STR: 0
@@ -698,20 +703,21 @@ MonoBehaviour:
     _RES: 0
     _CRI: 0
     _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _TYPE: "\uD55C\uC190 \uBC29\uD328"
+    _FireEn: 6
+    _WaterEn: 6
+    _EarthEn: 6
+    _LightEn: 6
+    _DarkEn: 6
+    _FireRES: 6
+    _WaterRES: 6
+    _EarthRES: 6
+    _LightRES: 6
+    _DarkRES: 6
+    _SideEffect: 
+  - _itemName: "\uB9C8\uC744 \uC218\uBE44 \uAC80"
     _itemId: 0007w
-    _itemType: "\uB9C8\uC744 \uC218\uBE44 \uAC80"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 5
@@ -724,21 +730,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 5
+    _TYPE: "\uD55C\uC190"
+    _FireEn: 7
+    _WaterEn: 7
+    _EarthEn: 7
+    _LightEn: 7
+    _DarkEn: 7
+    _FireRES: 7
+    _WaterRES: 7
+    _EarthRES: 7
+    _LightRES: 7
+    _DarkRES: 7
+    _SideEffect: 
+  - _itemName: "\uB9C8\uC744 \uC218\uBE44 \uCC3D"
     _itemId: 0008w
-    _itemType: "\uB9C8\uC744 \uC218\uBE44 \uCC3D"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 5
@@ -750,22 +757,23 @@ MonoBehaviour:
     _MTK: 0
     _DEF: 0
     _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _CRI: 5
+    _DELAY: 8
+    _TYPE: "\uC591\uC190"
+    _FireEn: 8
+    _WaterEn: 8
+    _EarthEn: 8
+    _LightEn: 8
+    _DarkEn: 8
+    _FireRES: 8
+    _WaterRES: 8
+    _EarthRES: 8
+    _LightRES: 8
+    _DarkRES: 8
+    _SideEffect: 
+  - _itemName: "\uB9C8\uC744 \uC218\uBE44 \uD65C"
     _itemId: 0009w
-    _itemType: "\uB9C8\uC744 \uC218\uBE44 \uD65C"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 0
@@ -778,21 +786,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 8
+    _TYPE: "\uC6D0\uAC70\uB9AC"
+    _FireEn: 9
+    _WaterEn: 9
+    _EarthEn: 9
+    _LightEn: 9
+    _DarkEn: 9
+    _FireRES: 9
+    _WaterRES: 9
+    _EarthRES: 9
+    _LightRES: 9
+    _DarkRES: 9
+    _SideEffect: 
+  - _itemName: "\uB450\uAEBC\uC6B4 \uAD50\uB9AC \uC11C"
     _itemId: 0010w
-    _itemType: "\uB450\uAEBC\uC6B4 \uAD50\uB9AC \uC11C"
+    _itemType: WEAPON
     _HP: 0
     _MP: 15
     _STR: 0
@@ -805,21 +814,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 10
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 3
+    _TYPE: "\uD55C\uC190"
+    _FireEn: 10
+    _WaterEn: 10
+    _EarthEn: 10
+    _LightEn: 10
+    _DarkEn: 10
+    _FireRES: 10
+    _WaterRES: 10
+    _EarthRES: 10
+    _LightRES: 10
+    _DarkRES: 10
+    _SideEffect: 
+  - _itemName: "\uB0A1\uC740 \uB9C8\uBC95 \uC11C"
     _itemId: 0011w
-    _itemType: "\uB0A1\uC740 \uB9C8\uBC95 \uC11C"
+    _itemType: WEAPON
     _HP: 0
     _MP: 30
     _STR: 0
@@ -832,21 +842,22 @@ MonoBehaviour:
     _DEF: 0
     _RES: 15
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 10
+    _TYPE: "\uD55C\uC190"
+    _FireEn: 11
+    _WaterEn: 11
+    _EarthEn: 11
+    _LightEn: 11
+    _DarkEn: 11
+    _FireRES: 11
+    _WaterRES: 11
+    _EarthRES: 11
+    _LightRES: 11
+    _DarkRES: 11
+    _SideEffect: 
+  - _itemName: "\uB3C4\uC801\uC758 \uB2E8\uAC80"
     _itemId: 0012w
-    _itemType: "\uB3C4\uC801\uC758 \uB2E8\uAC80"
+    _itemType: WEAPON
     _HP: 0
     _MP: 0
     _STR: 0
@@ -858,22 +869,23 @@ MonoBehaviour:
     _MTK: 0
     _DEF: 0
     _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _CRI: 5
+    _DELAY: 4
+    _TYPE: "\uD55C\uC190"
+    _FireEn: 12
+    _WaterEn: 12
+    _EarthEn: 12
+    _LightEn: 12
+    _DarkEn: 12
+    _FireRES: 12
+    _WaterRES: 12
+    _EarthRES: 12
+    _LightRES: 12
+    _DarkRES: 12
+    _SideEffect: 
+  - _itemName: "\uBB34\uB518 \uADF8\uB808\uC774\uD2B8\uC18C\uB4DC"
     _itemId: 0013w
-    _itemType: "\uBB34\uB518 \uADF8\uB808\uC774\uD2B8\uC18C\uB4DC"
+    _itemType: WEAPON
     _HP: 15
     _MP: 0
     _STR: 10
@@ -886,21 +898,22 @@ MonoBehaviour:
     _DEF: 5
     _RES: 0
     _CRI: 0
-    _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: WEAPON
+    _DELAY: 12
+    _TYPE: "\uC591\uC190"
+    _FireEn: 13
+    _WaterEn: 13
+    _EarthEn: 13
+    _LightEn: 13
+    _DarkEn: 13
+    _FireRES: 13
+    _WaterRES: 13
+    _EarthRES: 13
+    _LightRES: 13
+    _DarkRES: 13
+    _SideEffect: 
+  - _itemName: "\uB098\uBB34 \uAFBC \uB3C4\uB07C"
     _itemId: 0014w
-    _itemType: "\uB098\uBB34 \uAFBC \uB3C4\uB07C"
+    _itemType: WEAPON
     _HP: 20
     _MP: 0
     _STR: 8
@@ -913,18 +926,467 @@ MonoBehaviour:
     _DEF: 10
     _RES: 0
     _CRI: 0
+    _DELAY: 12
+    _TYPE: "\uC591\uC190"
+    _FireEn: 14
+    _WaterEn: 14
+    _EarthEn: 14
+    _LightEn: 14
+    _DarkEn: 14
+    _FireRES: 14
+    _WaterRES: 14
+    _EarthRES: 14
+    _LightRES: 14
+    _DarkRES: 14
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0015w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
     _DELAY: 0
-    _TYPE: 
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 15
+    _WaterEn: 15
+    _EarthEn: 15
+    _LightEn: 15
+    _DarkEn: 15
+    _FireRES: 15
+    _WaterRES: 15
+    _EarthRES: 15
+    _LightRES: 15
+    _DarkRES: 15
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0016w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 16
+    _WaterEn: 16
+    _EarthEn: 16
+    _LightEn: 16
+    _DarkEn: 16
+    _FireRES: 16
+    _WaterRES: 16
+    _EarthRES: 16
+    _LightRES: 16
+    _DarkRES: 16
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0017w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 17
+    _WaterEn: 17
+    _EarthEn: 17
+    _LightEn: 17
+    _DarkEn: 17
+    _FireRES: 17
+    _WaterRES: 17
+    _EarthRES: 17
+    _LightRES: 17
+    _DarkRES: 17
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0018w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 18
+    _WaterEn: 18
+    _EarthEn: 18
+    _LightEn: 18
+    _DarkEn: 18
+    _FireRES: 18
+    _WaterRES: 18
+    _EarthRES: 18
+    _LightRES: 18
+    _DarkRES: 18
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0019w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 19
+    _WaterEn: 19
+    _EarthEn: 19
+    _LightEn: 19
+    _DarkEn: 19
+    _FireRES: 19
+    _WaterRES: 19
+    _EarthRES: 19
+    _LightRES: 19
+    _DarkRES: 19
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0020w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 20
+    _WaterEn: 20
+    _EarthEn: 20
+    _LightEn: 20
+    _DarkEn: 20
+    _FireRES: 20
+    _WaterRES: 20
+    _EarthRES: 20
+    _LightRES: 20
+    _DarkRES: 20
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0021w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 21
+    _WaterEn: 21
+    _EarthEn: 21
+    _LightEn: 21
+    _DarkEn: 21
+    _FireRES: 21
+    _WaterRES: 21
+    _EarthRES: 21
+    _LightRES: 21
+    _DarkRES: 21
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0022w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 22
+    _WaterEn: 22
+    _EarthEn: 22
+    _LightEn: 22
+    _DarkEn: 22
+    _FireRES: 22
+    _WaterRES: 22
+    _EarthRES: 22
+    _LightRES: 22
+    _DarkRES: 22
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0023w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 23
+    _WaterEn: 23
+    _EarthEn: 23
+    _LightEn: 23
+    _DarkEn: 23
+    _FireRES: 23
+    _WaterRES: 23
+    _EarthRES: 23
+    _LightRES: 23
+    _DarkRES: 23
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0024w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 24
+    _WaterEn: 24
+    _EarthEn: 24
+    _LightEn: 24
+    _DarkEn: 24
+    _FireRES: 24
+    _WaterRES: 24
+    _EarthRES: 24
+    _LightRES: 24
+    _DarkRES: 24
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0025w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 25
+    _WaterEn: 25
+    _EarthEn: 25
+    _LightEn: 25
+    _DarkEn: 25
+    _FireRES: 25
+    _WaterRES: 25
+    _EarthRES: 25
+    _LightRES: 25
+    _DarkRES: 25
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0026w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 26
+    _WaterEn: 26
+    _EarthEn: 26
+    _LightEn: 26
+    _DarkEn: 26
+    _FireRES: 26
+    _WaterRES: 26
+    _EarthRES: 26
+    _LightRES: 26
+    _DarkRES: 26
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0027w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 27
+    _WaterEn: 27
+    _EarthEn: 27
+    _LightEn: 27
+    _DarkEn: 27
+    _FireRES: 27
+    _WaterRES: 27
+    _EarthRES: 27
+    _LightRES: 27
+    _DarkRES: 27
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0028w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 28
+    _WaterEn: 28
+    _EarthEn: 28
+    _LightEn: 28
+    _DarkEn: 28
+    _FireRES: 28
+    _WaterRES: 28
+    _EarthRES: 28
+    _LightRES: 28
+    _DarkRES: 28
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0029w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 29
+    _WaterEn: 29
+    _EarthEn: 29
+    _LightEn: 29
+    _DarkEn: 29
+    _FireRES: 29
+    _WaterRES: 29
+    _EarthRES: 29
+    _LightRES: 29
+    _DarkRES: 29
+    _SideEffect: 
+  - _itemName: "\uBBF8\uAD6C\uD604"
+    _itemId: 0030w
+    _itemType: WEAPON
+    _HP: 0
+    _MP: 0
+    _STR: 0
+    _AGI: 0
+    _DEX: 0
+    _INT: 0
+    _SPI: 0
+    _ATK: 0
+    _MTK: 0
+    _DEF: 0
+    _RES: 0
+    _CRI: 0
+    _DELAY: 0
+    _TYPE: "\uBBF8\uC815"
+    _FireEn: 30
+    _WaterEn: 30
+    _EarthEn: 30
+    _LightEn: 30
+    _DarkEn: 30
+    _FireRES: 30
+    _WaterRES: 30
+    _EarthRES: 30
+    _LightRES: 30
+    _DarkRES: 30
+    _SideEffect: 
 --- !u!4 &266473333
 Transform:
   m_ObjectHideFlags: 0
@@ -1216,14 +1678,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8bd141096e5b441bffa60c9422e255, type: 3}
+  m_Script: {fileID: 11500000, guid: 90e5e724d7352f346874e0dfda5c07a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 603094704}
-  distance: 5
+  distance: 10
   height: 5
   heightDamping: 2
-  rotationDaping: 0
+  rotationDaping: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1395,6 +1857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 598c000c85a3c6147ac68f087a158d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 0
   isDie: 0
 --- !u!54 &603094700
 Rigidbody:
@@ -3674,389 +4137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf182b1aa11bf345bb1632ddac4d979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 4900000, guid: d1e11612bb330fc489d0d1dbd7281543, type: 3}
+  itemData: {fileID: 4900000, guid: a558fa8a870967143824680a665d89f1, type: 3}
   items:
-  - _itemName: "\uBAA9\uAC80"
-    _itemId: 0001w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 1
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 10
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 5
-    _TYPE: "\uD55C\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uC0AC\uB0E5\uC6A9 \uD65C"
-    _itemId: 0002w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 1
-    _INT: 0
-    _SPI: 0
-    _ATK: 20
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 8
-    _TYPE: "\uC6D0\uAC70\uB9AC"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uC0AC\uB0E5\uC6A9 \uB2E8\uAC80"
-    _itemId: 0003w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 1
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 15
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 2
-    _DELAY: 4
-    _TYPE: "\uD55C\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uCD0C\uC7A5\uC758 \uB0A1\uC740 \uC9C0\uD321\uC774"
-    _itemId: 0004w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 20
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 5
-    _SPI: 5
-    _ATK: 5
-    _MTK: 10
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 5
-    _TYPE: "\uC591\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB098\uBB34 \uBA54\uC774\uC2A4"
-    _itemId: 0005w
-    _itemType: WEAPON
-    _HP: 10
-    _MP: 0
-    _STR: 1
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 1
-    _ATK: 22
-    _MTK: 0
-    _DEF: 5
-    _RES: 0
-    _CRI: 0
-    _DELAY: 6
-    _TYPE: "\uC591\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB098\uBB34 \uBC29\uD328"
-    _itemId: 0006w
-    _itemType: WEAPON
-    _HP: 20
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 15
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uD55C\uC190 \uBC29\uD328"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB9C8\uC744 \uC218\uBE44 \uAC80"
-    _itemId: 0007w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 5
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 26
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 5
-    _TYPE: "\uD55C\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB9C8\uC744 \uC218\uBE44 \uCC3D"
-    _itemId: 0008w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 5
-    _AGI: 0
-    _DEX: 1
-    _INT: 0
-    _SPI: 0
-    _ATK: 30
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 5
-    _DELAY: 8
-    _TYPE: "\uC591\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB9C8\uC744 \uC218\uBE44 \uD65C"
-    _itemId: 0009w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 5
-    _INT: 0
-    _SPI: 0
-    _ATK: 28
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 8
-    _TYPE: "\uC6D0\uAC70\uB9AC"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB450\uAEBC\uC6B4 \uAD50\uB9AC \uC11C"
-    _itemId: 0010w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 15
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 5
-    _SPI: 10
-    _ATK: 5
-    _MTK: 10
-    _DEF: 0
-    _RES: 10
-    _CRI: 0
-    _DELAY: 3
-    _TYPE: "\uD55C\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB0A1\uC740 \uB9C8\uBC95 \uC11C"
-    _itemId: 0011w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 30
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 10
-    _SPI: 5
-    _ATK: 5
-    _MTK: 30
-    _DEF: 0
-    _RES: 15
-    _CRI: 0
-    _DELAY: 10
-    _TYPE: "\uD55C\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB3C4\uC801\uC758 \uB2E8\uAC80"
-    _itemId: 0012w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 5
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 20
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 5
-    _DELAY: 4
-    _TYPE: "\uD55C\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBB34\uB518 \uADF8\uB808\uC774\uD2B8\uC18C\uB4DC"
-    _itemId: 0013w
-    _itemType: WEAPON
-    _HP: 15
-    _MP: 0
-    _STR: 10
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 40
-    _MTK: 0
-    _DEF: 5
-    _RES: 0
-    _CRI: 0
-    _DELAY: 12
-    _TYPE: "\uC591\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uB098\uBB34 \uAFBC \uB3C4\uB07C"
-    _itemId: 0014w
-    _itemType: WEAPON
-    _HP: 20
-    _MP: 0
-    _STR: 8
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 32
-    _MTK: 0
-    _DEF: 10
-    _RES: 0
-    _CRI: 0
-    _DELAY: 12
-    _TYPE: "\uC591\uC190"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0015w
-    _itemType: WEAPON
+  - _itemName: WEAPON
+    _itemId: "0001w\r"
+    _itemType: "\uBAA9\uAC80"
     _HP: 0
     _MP: 0
     _STR: 0
@@ -4070,7 +4155,7 @@ MonoBehaviour:
     _RES: 0
     _CRI: 0
     _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
+    _TYPE: 
     _FireEn: 0
     _WaterEn: 0
     _EarthEn: 0
@@ -4081,9 +4166,10 @@ MonoBehaviour:
     _EarthRES: 0
     _LightRES: 0
     _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0016w
-    _itemType: WEAPON
+    _SideEffect: 
+  - _itemName: WEAPON
+    _itemId: "0002w\r"
+    _itemType: "\uC0AC\uB0E5\uC6A9 \uD65C"
     _HP: 0
     _MP: 0
     _STR: 0
@@ -4097,7 +4183,7 @@ MonoBehaviour:
     _RES: 0
     _CRI: 0
     _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
+    _TYPE: 
     _FireEn: 0
     _WaterEn: 0
     _EarthEn: 0
@@ -4108,9 +4194,10 @@ MonoBehaviour:
     _EarthRES: 0
     _LightRES: 0
     _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0017w
-    _itemType: WEAPON
+    _SideEffect: 
+  - _itemName: WEAPON
+    _itemId: "0003w\r"
+    _itemType: "\uC0AC\uB0E5\uC6A9 \uB2E8\uAC80"
     _HP: 0
     _MP: 0
     _STR: 0
@@ -4124,7 +4211,7 @@ MonoBehaviour:
     _RES: 0
     _CRI: 0
     _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
+    _TYPE: 
     _FireEn: 0
     _WaterEn: 0
     _EarthEn: 0
@@ -4135,303 +4222,7 @@ MonoBehaviour:
     _EarthRES: 0
     _LightRES: 0
     _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0018w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0019w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0020w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0021w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0022w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0023w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0024w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0025w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0026w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0027w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
-  - _itemName: "\uBBF8\uAD6C\uD604"
-    _itemId: 0028w
-    _itemType: WEAPON
-    _HP: 0
-    _MP: 0
-    _STR: 0
-    _AGI: 0
-    _DEX: 0
-    _INT: 0
-    _SPI: 0
-    _ATK: 0
-    _MTK: 0
-    _DEF: 0
-    _RES: 0
-    _CRI: 0
-    _DELAY: 0
-    _TYPE: "\uBBF8\uC815"
-    _FireEn: 0
-    _WaterEn: 0
-    _EarthEn: 0
-    _LightEn: 0
-    _DarkEn: 0
-    _FireRES: 0
-    _WaterRES: 0
-    _EarthRES: 0
-    _LightRES: 0
-    _DarkRES: 0
+    _SideEffect: 
 --- !u!4 &2039042068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2915307673098432245, guid: 88be178ae9759ed40951ffb819490957,
