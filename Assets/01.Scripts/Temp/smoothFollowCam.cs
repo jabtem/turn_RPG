@@ -14,7 +14,7 @@ public class smoothFollowCam : MonoBehaviour
 
     public float heightDamping = 2.0f;
 
-    public float rotationDaping = 3.0f;
+    public float rotationDaping = 0f;
 
 
     // 한 프레임에 모든 Update가 실행된 후 호출되는 함수로

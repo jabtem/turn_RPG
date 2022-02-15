@@ -35,19 +35,14 @@ public class PlayerCtrl : MonoBehaviour {
     //죽었는지 상태변수 
     public bool isDie;
 
+    //이캐릭터가 선택됬는지 여부
+    public bool isSelected;
+
 
     //자신의 Transform 참조 변수  
     private Transform myTr;
 
-    //Ray 센서를 위한 변수
-    bool check;
 
-    //케릭터 센서 Idle 방향
-    private bool turnRight;
-    //케릭터 센서 각도
-    private float turnValue;
-
-    //플레이어 데미지
 
 
     void Awake()
@@ -82,19 +77,17 @@ public class PlayerCtrl : MonoBehaviour {
 
 
 
-        //Main Camera 에서 마우스 커서(Vector3 타입이지만 Z값 무시한 값 (0~1280,0~800,0) )의 위치로 캐스팅되는 Ray를 생성함
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        //Scene 뷰에만 시각적으로 표현함
         Debug.DrawRay(ray.origin, ray.direction * 100.0f, Color.blue);
 
 #if UNITY_EDITOR
         //마우스 왼쪽 버튼을 클릭시 Ray를 캐스팅  
-        if (Input.GetMouseButtonDown(0) && !isDie)
+        if (Input.GetMouseButtonDown(0) && !isDie &&isSelected && canMove)
         {
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             //위에서 미리 생성한 ray를 인자로 전달, out(메서드 안에서 메서드 밖으로 데이타를 전달 할때 사용)hit, ray 거리, 레이어 마스크 값(레이어가 Ground 일때만 충돌)
             // Mathf.Infinity 이 값은 무한한 값이라고 생각하면 된다. 따라서 거리가 무한~~~
-            if (Physics.Raycast(ray, out hitInfo1, Mathf.Infinity, 1 << LayerMask.NameToLayer("Ground") )&& canMove)
+            if (Physics.Raycast(ray, out hitInfo1, Mathf.Infinity, 1 << LayerMask.NameToLayer("Ground") ))
             {
                 //ray에 맞은 위치를 이동할 목표지점으로 설정
                 movePoint = hitInfo1.point;
@@ -107,24 +100,24 @@ public class PlayerCtrl : MonoBehaviour {
         }
 #endif
 
-#if UNITY_STANDALONE_WIN
-        //마우스 왼쪽 버튼을 클릭시 Ray를 캐스팅  
-        if (Input.GetMouseButtonDown(0) && !isDie)
-        {
-            //위에서 미리 생성한 ray를 인자로 전달, out(메서드 안에서 메서드 밖으로 데이타를 전달 할때 사용)hit, ray 거리, 레이어 마스크 값(레이어가 Barrel 일때만 충돌)
-            // Mathf.Infinity 이 값은 무한한 값이라고 생각하면 된다. 따라서 거리가 무한~~~
-            if (Physics.Raycast(ray, out hitInfo1, Mathf.Infinity, 1 << LayerMask.NameToLayer("Ground")))
-            {
-                //ray에 맞은 위치를 이동할 목표지점으로 설정
-                movePoint = hitInfo1.point;
+//#if UNITY_STANDALONE_WIN
+//        //마우스 왼쪽 버튼을 클릭시 Ray를 캐스팅  
+//        if (Input.GetMouseButtonDown(0) && !isDie)
+//        {
+//            //위에서 미리 생성한 ray를 인자로 전달, out(메서드 안에서 메서드 밖으로 데이타를 전달 할때 사용)hit, ray 거리, 레이어 마스크 값(레이어가 Barrel 일때만 충돌)
+//            // Mathf.Infinity 이 값은 무한한 값이라고 생각하면 된다. 따라서 거리가 무한~~~
+//            if (Physics.Raycast(ray, out hitInfo1, Mathf.Infinity, 1 << LayerMask.NameToLayer("Ground")))
+//            {
+//                //ray에 맞은 위치를 이동할 목표지점으로 설정
+//                movePoint = hitInfo1.point;
 
-                //NavMeshAgent 컴포넌트의 목적지 설정
-                myTraceAgent.destination = movePoint;
-                myTraceAgent.stoppingDistance = 0.0f;
+//                //NavMeshAgent 컴포넌트의 목적지 설정
+//                myTraceAgent.destination = movePoint;
+//                myTraceAgent.stoppingDistance = 0.0f;
 
-            }
-        }
-#endif
+//            }
+//        }
+//#endif
 
 #if UNITY_ANDROID
         //스크린에 터치가 이루어진 상태에서 첫 번째 손가락 터치가 시작됐는지 비교
